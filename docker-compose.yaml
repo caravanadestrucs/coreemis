@@ -29,8 +29,6 @@ services:
     - DB_HOST=openemis-core-database    # Specifies the DB_Host as DB container
     - DB_USERNAME=root    # Specifies the DB_Username as root
     - DB_PASSWORD=root 
-    env_file:
-      - docker-config/.env
     volumes:
       - openemis-core-config:/config
     networks:
