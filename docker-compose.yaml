@@ -22,7 +22,7 @@ services:
     container_name: openemis-core   # Specifies the name of container for easier reference
     restart: always   #  Automatically restart the container if it stops or host reboots
     ports:
-    - "3000:80"   # Maps the Port 3000 on host to Port 80 on container(Apache Default Port)
+    - "3080:80"   # Maps the Port 3000 on host to Port 80 on container(Apache Default Port)
     depends_on:
     - openemis-core-database    # Specifies the container dependency for start up order
     environment:
